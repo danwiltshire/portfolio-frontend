@@ -8,12 +8,21 @@ pipeline {
   stages {
     stage('Install Packages') {
       steps {
-        sh 'yarn install'
+        sh '/usr/bin/yarn install'
       }
     }
-    stage('Create Build Artifacts') {
-      steps {
-        sh '/usr/bin/yarn build'
+    stage('Test and Build') {
+      parallel {
+        stage('Run Tests') {
+          steps {
+            sh '/usr/bin/yarn run test'
+          }
+        }
+        stage('Create Build Artifacts') {
+          steps {
+            sh '/usr/bin/yarn run build'
+          }
+        }
       }
     }
     stage('Deployment') {
