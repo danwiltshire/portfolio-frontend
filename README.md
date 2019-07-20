@@ -1,2 +1,2 @@
 # portfolio-frontend
-Frontend for my portfolio website
+Frontend for my portfolio website.
