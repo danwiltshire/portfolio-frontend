@@ -72,7 +72,7 @@ const App = () => (
                   ],
               },
               {
-                Header: "Jewellery",
+                Header: "Jewellery 2",
                 Meta: "Photo shoot for Italian Heart Handmade",
                 SmallImageSrc: "/images/photography/italian_heart_handmade_1_small.jpg",
                 LargeImageSrc: "/images/photography/italian_heart_handmade_1.jpg",
