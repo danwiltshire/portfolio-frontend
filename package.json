@@ -9,6 +9,9 @@
       "@babel/preset-react"
     ]
   },
+  "scripts": {
+    "create": "webpack"
+  },
   "repository": "https://github.com/danwiltshire/portfolio-frontend.git",
   "author": "danwiltshire <me@danielwiltshire.co.uk>",
   "license": "MIT",
