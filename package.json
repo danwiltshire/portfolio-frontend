@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-frontend",
+  "version": "1.0.0",
+  "description": "A React front-end for my portfolio website",
+  "main": "index.js",
+  "repository": "https://github.com/danwiltshire/portfolio-frontend.git",
+  "author": "danwiltshire <me@danielwiltshire.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
