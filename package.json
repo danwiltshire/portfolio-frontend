@@ -10,7 +10,8 @@
     ]
   },
   "scripts": {
-    "create": "webpack-dev-server --open"
+    "create": "webpack",
+    "start": "webpack-dev-server --open"
   },
   "repository": "https://github.com/danwiltshire/portfolio-frontend.git",
   "author": "danwiltshire <me@danielwiltshire.co.uk>",
