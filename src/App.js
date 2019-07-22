@@ -43,7 +43,7 @@ const App = () => (
                 AdditionalURLs: []
               },
               {
-                Header: "Freece Tricolori",
+                Header: "Frecce Tricolori",
                 Meta: "RAF Fairford 2019",
                 SmallImageSrc: "/images/photography/air_tattoo_2_small.jpg",
                 LargeImageSrc: "/images/photography/air_tattoo_2.jpg",
@@ -86,7 +86,7 @@ const App = () => (
                   ],
               },
               {
-                Header: "Jewellery",
+                Header: "Jewellery 2",
                 Meta: "Photo shoot for Italian Heart Handmade",
                 SmallImageSrc: "/images/photography/italian_heart_handmade_1_small.jpg",
                 LargeImageSrc: "/images/photography/italian_heart_handmade_1.jpg",
