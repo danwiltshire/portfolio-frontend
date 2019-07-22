@@ -15,5 +15,7 @@ deploy:
   bucket: dev.danielwiltshire.co.uk
   region: eu-west-2
   acl: public_read
+  skip_cleanup: true
+  local_dir: build
   on:
     repo: danwiltshire/portfolio-frontend
