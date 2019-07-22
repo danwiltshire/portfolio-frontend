@@ -43,6 +43,20 @@ const App = () => (
                 AdditionalURLs: []
               },
               {
+                Header: "Freece Tricolori",
+                Meta: "RAF Fairford 2019",
+                SmallImageSrc: "/images/photography/air_tattoo_2_small.jpg",
+                LargeImageSrc: "/images/photography/air_tattoo_2.jpg",
+                AdditionalURLs: []
+              },
+              {
+                Header: "Eurofighter Typhoon",
+                Meta: "RAF Fairford 2019",
+                SmallImageSrc: "/images/photography/air_tattoo_1_small.jpg",
+                LargeImageSrc: "/images/photography/air_tattoo_1.jpg",
+                AdditionalURLs: []
+              },
+              {
                 Header: "Sankt Jørgens Sø at Dusk",
                 Meta: "Sankt Jørgens Sø, Copenhagen",
                 SmallImageSrc: "/images/photography/sankt_jorgens_so_dusk_small.jpg",
@@ -72,7 +86,7 @@ const App = () => (
                   ],
               },
               {
-                Header: "Jewellery 2",
+                Header: "Jewellery",
                 Meta: "Photo shoot for Italian Heart Handmade",
                 SmallImageSrc: "/images/photography/italian_heart_handmade_1_small.jpg",
                 LargeImageSrc: "/images/photography/italian_heart_handmade_1.jpg",
