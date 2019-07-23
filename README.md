@@ -1,5 +1,3 @@
-## Available Scripts
-
 # portfolio-frontend [![Build Status](https://travis-ci.org/danwiltshire/portfolio-frontend.svg?branch=master)](https://travis-ci.org/danwiltshire/portfolio-frontend)
 
 A React front-end for my portfolio website.
