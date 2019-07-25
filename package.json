@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A React front-end for my portfolio website",
   "main": "index.js",
-  "babel":{
-    "presets" : [
+  "babel": {
+    "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
     ]
