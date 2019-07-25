@@ -15,7 +15,7 @@
   },
   "repository": "https://github.com/danwiltshire/portfolio-frontend.git",
   "author": "danwiltshire <me@danielwiltshire.co.uk>",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
