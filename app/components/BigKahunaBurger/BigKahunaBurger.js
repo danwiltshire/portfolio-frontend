@@ -25,7 +25,21 @@ const BigKahunaBurger = () => (
             <article>
                 <img
                     src="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_1_small.jpg"
-                    alt="Looking Glass"
+                    alt="Looking Glass at Louisiana Design Museum, Copenhagen"
+                />
+            </article>
+
+            <article>
+                <img
+                    src="https://danielwiltshire.co.uk/images/photography/sankt_jorgens_so_sunset_small.jpg"
+                    alt="Sankt Jørgens Sø at sunset, Copenhagen"
+                />
+            </article>
+
+            <article>
+                <img
+                    src="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_2_small.jpg"
+                    alt="Museum Gardens at Louisiana Design Museum, Copenhagen"
                 />
             </article>
 
