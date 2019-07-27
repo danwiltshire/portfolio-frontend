@@ -1,11 +1,9 @@
 import React from 'react'
 
 const BigKahunaBurger = () => (
-
   <div>
 
     <header>
-
       <h1>BigKahunaBurger</h1>
       <p>Hey, nice to meet you!</p>
 
@@ -16,7 +14,6 @@ const BigKahunaBurger = () => (
         title="See my profile on LinkedIn">
         LinkedIn Profile
       </a>
-
     </header>
 
     <main>
@@ -47,7 +44,6 @@ const BigKahunaBurger = () => (
     </main>
 
   </div>
-
 )
 
 export default BigKahunaBurger
