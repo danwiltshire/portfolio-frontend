@@ -10,7 +10,11 @@ const BigKahunaBurger = () => (
 
             <p>I’m an IT Infrastructure Security Administrator for apetito UK where I implement strong and usable IT security solutions. In my spare time, I play a variety of instruments, shoot photographs, design websites and build my skill-set in my home lab.</p>
 
-            <a href="https://www.linkedin.com/in/danielwiltshire/">My LinkedIn</a>
+            <a
+                href="https://www.linkedin.com/in/danielwiltshire/"
+                title="See my profile on LinkedIn">
+                LinkedIn Profile
+            </a>
 
         </header>
 
