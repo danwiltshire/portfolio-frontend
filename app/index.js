@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Test from './components/Test'
 import './index.css';
+import BigKahunaBurger from './components/BigKahunaBurger'
 
 // ES6 class component
 /* class App extends React.Component{
@@ -16,13 +16,13 @@ import './index.css';
     }
 } */
 
-const BBC = (
+/* const BBC = () => (
     <div>Hello</div>
-)
+) */
 
 // JavaScript standard functional
 function App() {
-    return <BBC />;
+    return <BigKahunaBurger />;
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))
