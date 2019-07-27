@@ -41,6 +41,29 @@ const BigKahunaBurger = () => (
         />
       </article>
 
+      <h2>Design</h2>
+
+      <article>
+        <img
+          src="https://danielwiltshire.co.uk/images/design/block_planet_mc_small.jpg"
+          alt="BlockPlanetMC, a website for a Minecraft gaming community"
+        />
+      </article>
+
+      <article>
+        <img
+          src="https://danielwiltshire.co.uk/images/design/aviation_festival_small.jpg"
+          alt="Poster for Bristol's Aviation Festival, 2014"
+        />
+      </article>
+
+      <article>
+        <img
+          src="https://danielwiltshire.co.uk/images/design/online_art_gallery_small.jpg"
+          alt="Online art gallery for student work"
+        />
+      </article>
+
     </main>
 
   </div>
