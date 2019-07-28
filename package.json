@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "A React front-end for my portfolio website",
   "main": "index.js",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --open"
@@ -23,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
