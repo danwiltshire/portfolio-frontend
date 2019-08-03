@@ -21,7 +21,7 @@ const BigKahunaBurger = () => (
     <main>
 
       <h2>Photography</h2>
-
+      <PersonList />
       <article className="gallery_image">
         <a
           href="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_1.jpg">
