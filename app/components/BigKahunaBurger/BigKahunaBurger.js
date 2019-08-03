@@ -1,6 +1,6 @@
 import React from 'react'
-
-import PersonList from '../PersonList'
+import Designs from '../Designs'
+import Photographs from '../Photographs'
 
 const BigKahunaBurger = () => (
   <div>
@@ -21,68 +21,12 @@ const BigKahunaBurger = () => (
     <main>
 
       <h2>Photography</h2>
-      <PersonList />
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_1.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_1_small.jpg"
-            alt="Looking Glass at Louisiana Design Museum, Copenhagen"
-          />
-        </a>
-      </article>
 
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/photography/sankt_jorgens_so_sunset.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/photography/sankt_jorgens_so_sunset_small.jpg"
-            alt="Sankt Jørgens Sø at sunset, Copenhagen"
-          />
-        </a>
-      </article>
-
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_2.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/photography/louisiana_design_museum_2_small.jpg"
-            alt="Museum Gardens at Louisiana Design Museum, Copenhagen"
-          />
-        </a>
-      </article>
+      <Photographs />
 
       <h2>Design</h2>
 
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/design/block_planet_mc.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/design/block_planet_mc_small.jpg"
-            alt="BlockPlanetMC, a website for a Minecraft gaming community"
-          />
-        </a>
-      </article>
-
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/design/aviation_festival.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/design/aviation_festival_small.jpg"
-            alt="Poster for Bristol's Aviation Festival, 2014"
-          />
-        </a>
-      </article>
-
-      <article className="gallery_image">
-        <a
-          href="https://danielwiltshire.co.uk/images/design/online_art_gallery.jpg">
-          <img
-            src="https://danielwiltshire.co.uk/images/design/online_art_gallery_small.jpg"
-            alt="Online art gallery for student work"
-          />
-        </a>
-      </article>
+      <Designs />
 
       <h2>Lab</h2>
 
