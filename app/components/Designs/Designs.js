@@ -1,5 +1,5 @@
 import React from 'react'
-import API from "../../utils/API";
+import API from '../../utils/API'
 
 export default class Designs extends React.Component {
   state = {
@@ -8,7 +8,7 @@ export default class Designs extends React.Component {
 
   async componentDidMount () {
     try {
-      const res = await API.get("/designs")
+      const res = await API.get('/designs')
       const designs = res.data.data
       this.setState({ designs })
     } catch (e) {

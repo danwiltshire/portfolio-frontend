@@ -1,5 +1,5 @@
 import React from 'react'
-import API from "../../utils/API";
+import API from '../../utils/API'
 
 export default class Photographs extends React.Component {
   state = {
@@ -8,7 +8,7 @@ export default class Photographs extends React.Component {
 
   async componentDidMount () {
     try {
-      const res = await API.get("/photographs")
+      const res = await API.get('/photographs')
       const photographs = res.data.data
       this.setState({ photographs })
     } catch (e) {
