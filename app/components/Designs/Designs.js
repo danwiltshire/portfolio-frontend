@@ -8,7 +8,7 @@ export default class Designs extends React.Component {
 
   async componentDidMount () {
     try {
-      let res = await API.get("/designs")
+      const res = await API.get("/designs")
       const designs = res.data.data
       this.setState({ designs })
     } catch (e) {

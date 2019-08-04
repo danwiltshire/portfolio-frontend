@@ -8,7 +8,7 @@ export default class Photographs extends React.Component {
 
   async componentDidMount () {
     try {
-      let res = await API.get("/photographs")
+      const res = await API.get("/photographs")
       const photographs = res.data.data
       this.setState({ photographs })
     } catch (e) {
