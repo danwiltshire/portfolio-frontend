@@ -12,7 +12,6 @@ export default class Photographs extends React.Component {
       .then(res => {
         const photographs = res.data.data
         this.setState({ photographs })
-        console.log(res)
       })
   }
 

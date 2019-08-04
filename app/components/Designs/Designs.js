@@ -12,7 +12,6 @@ export default class Designs extends React.Component {
       .then(res => {
         const designs = res.data.data
         this.setState({ designs })
-        console.log(res)
       })
   }
 
