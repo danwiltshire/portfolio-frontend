@@ -18,7 +18,7 @@ const BigKahunaBurger = () => (
       </a>
     </header>
 
-    <main>
+    <section>
 
       <h2>Photography</h2>
 
@@ -40,7 +40,7 @@ const BigKahunaBurger = () => (
         </a>
       </article>
 
-    </main>
+    </section>
 
   </div>
 )
