@@ -1,5 +1,6 @@
 import React from 'react'
-import axios from 'axios'
+//import axios from 'axios'
+import API from "../../utils/API";
 
 export default class Designs extends React.Component {
   state = {
@@ -7,7 +8,7 @@ export default class Designs extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('https://895o1wozfh.execute-api.eu-west-2.amazonaws.com/prod/designs')
+    API.get('/designs')
       .then(res => {
         const designs = res.data.data
         this.setState({ designs })
