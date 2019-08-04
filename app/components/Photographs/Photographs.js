@@ -6,7 +6,7 @@ export default class Photographs extends React.Component {
     photographs: []
   }
 
-  componentDidMount () {
+  async componentDidMount () {
     API.get('/photographs')
       .then(res => {
         const photographs = res.data.data
