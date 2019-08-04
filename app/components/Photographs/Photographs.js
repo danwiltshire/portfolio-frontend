@@ -7,11 +7,13 @@ export default class Photographs extends React.Component {
   }
 
   async componentDidMount () {
-    API.get('/photographs')
-      .then(res => {
-        const photographs = res.data.data
-        this.setState({ photographs })
-      })
+    try {
+      let res = await API.get("/photographs")
+      const photographs = res.data.data
+      this.setState({ photographs })
+    } catch (e) {
+      console.log(`Axios request failed: ${e}`)
+    }
   }
 
   render () {

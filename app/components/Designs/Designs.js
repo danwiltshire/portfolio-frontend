@@ -6,12 +6,14 @@ export default class Designs extends React.Component {
     designs: []
   }
 
-  componentDidMount () {
-    API.get('/designs')
-      .then(res => {
-        const designs = res.data.data
-        this.setState({ designs })
-      })
+  async componentDidMount () {
+    try {
+      let res = await API.get("/designs")
+      const designs = res.data.data
+      this.setState({ designs })
+    } catch (e) {
+      console.log(`Axios request failed: ${e}`)
+    }
   }
 
   render () {
