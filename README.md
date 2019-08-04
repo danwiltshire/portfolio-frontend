@@ -1,4 +1,7 @@
 # portfolio-frontend
+
+[![Build Status](https://travis-ci.org/danwiltshire/portfolio-frontend.svg?branch=master)](https://travis-ci.org/danwiltshire/portfolio-frontend)
+
 Frontend for my portfolio website
 
 ## Technologies involved
