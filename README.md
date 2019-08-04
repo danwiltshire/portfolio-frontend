@@ -1,6 +1,11 @@
 # portfolio-frontend
 Frontend for my portfolio website
 
+## Technologies involved
+* React, Babel, Webpack
+* AWS API Gateway
+* AWS Lambda
+
 ## Available Scripts
 
 In the project directory, you can run:
