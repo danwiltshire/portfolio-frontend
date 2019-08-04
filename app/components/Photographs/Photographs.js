@@ -1,5 +1,4 @@
 import React from 'react'
-//import axios from 'axios'
 import API from "../../utils/API";
 
 export default class Photographs extends React.Component {
