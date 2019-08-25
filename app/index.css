@@ -32,8 +32,23 @@ article.gallery_image {
   box-shadow: 0 0 15px #000000;
 }
 
+@media only screen and (max-width: 600px) {
+  article.gallery_image {
+    width: 30%;
+    margin: 5px;
+    box-shadow: 0 0 3px #000000;
+  }
+}
+
 article.gallery_image img {
   display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  article.gallery_image img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 div.title-with-subtitle h1 {
@@ -94,6 +109,6 @@ section h2 {
   font-size: 18px;
   font-weight: 700;
   padding: 23px 0;
-  margin: 40px auto;
+  margin: 20px auto;
   display: block;
 }
