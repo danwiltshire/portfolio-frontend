@@ -19,3 +19,6 @@ deploy:
   local_dir: dist
   on:
     repo: danwiltshire/portfolio-frontend
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id E30VJO5CGRJ0ZZ --paths "/*"
