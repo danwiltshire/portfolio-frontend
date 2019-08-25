@@ -1,9 +1,15 @@
+sudo: required
 language: node_js
 node_js:
 - stable
+python:
+- "3.5"
 cache:
   directories:
   - node_modules
+- pip
+install:
+- pip install awscli
 script:
 - npm test
 - npm run build
