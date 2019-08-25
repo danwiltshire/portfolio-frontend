@@ -28,18 +28,6 @@ const BigKahunaBurger = () => (
 
       <Designs />
 
-      <h2>Lab</h2>
-
-      <h3>Tutorials</h3>
-
-      <article>
-        <a
-          href="https://github.com/XeonFibre/tutorials/blob/master/deploying-elk-stack-using-the-foreman.md"
-          title="How to deploy Elasticsearch, Logstash and Kibana using The Foreman">
-          Deploying an ELK Stack using The Foreman
-        </a>
-      </article>
-
       <h2>This isn&apos;t just static HTML&hellip;</h2>
 
       <p>Here are a few things that make my portfolio beautifully complex:</p>
