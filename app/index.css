@@ -1,0 +1,26 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #2a2c31;
+  color: #bbbec5;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+}
+
+a:link { color: #93b7cd }
+a:visited { color: #93b7cd }
+a:hover { color: #a0c5da }
+a:active { color: #89adc2 }
+
+article.gallery_image {
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
