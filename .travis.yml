@@ -16,6 +16,6 @@ deploy:
   region: eu-west-2
   acl: public_read
   skip_cleanup: true
-  local_dir: build
+  local_dir: dist
   on:
     repo: danwiltshire/portfolio-frontend
