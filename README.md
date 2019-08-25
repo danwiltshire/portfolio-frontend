@@ -1,6 +1,6 @@
 # portfolio-frontend
 
-[![Build Status](https://travis-ci.org/danwiltshire/portfolio-frontend.svg?branch=master)](https://travis-ci.org/danwiltshire/portfolio-frontend)
+[![Build Status](https://travis-ci.com/danwiltshire/portfolio-frontend.svg?branch=master)](https://travis-ci.com/danwiltshire/portfolio-frontend)
 
 Frontend for my portfolio website
 
