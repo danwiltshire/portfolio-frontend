@@ -1,17 +1,17 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
 deploy:
   provider: s3
-  access_key_id: AKIAWGUPMT3JWO3X2OEK
+  access_key_id: AKIAWGUPMT3J46BJE6PM
   secret_access_key:
-    secure: E27nQKzhpg01AulpwvAw4e1JeuUbo9nmKWo/d5k3rJHx0ePdCGEpIFrgxfAC/k1nCGFvdA/EP28UzlG9QK0qQLOsUY66UwLXAqnJJANvWqO4XVo9PeYQXb57q+jKX+aWkdIJIwzznb2K2GQgo3hvE6g7B5p2QXWOlB55pS7RjdJdV00J1PY36YlJy2JqqHsYn2Ssj3c13qa1b4Qkr0wQ2Kc99fki8w+HPSocJ1WatU7Q54mLmE35FXnm9q23JLsy3wTCWLDcjiUstdQqBxiXvAED+Xhap7TezXSVHHxsA8FTOcX9Ot7SIb/iFBSx57o49FZrcrVq4ZqbQDC47SGPo5s/XtDZYcXgORjy8SL4fZ/Dk/GqIPjdVS87E7cSr+/KiYsYqwDR2qNv1GqcA7rPZze0caEv3Yhou5xd9ZqpvXqowCuwZRyrMMo06Tyni5xtkysk+NpbPgavmdAzNiyK3Yo7O+KwcULDzeNUuBp/X87/keWzHjvPD+G+f3rB5LDZLQVjwB8mh+F755zBh0UkoD3r0DcYwpo+gpAztuVnspVH1q//0qhJUSD/SKX1vWeUXf+s7Po/ZHsEKJS/gI+OsVzOCGX33NJzUv9T4ipAocVOsPa2OoNQfxYu+Vlnf9htqh0GKaSV6ipKTRqkW0DLxWuPjc8SS/qyzfHss4YPS8Y=
+    secure: BEPJCn/10Uh4X1Gnfsa1R+IegiQ5C+ETtLUzzzGI1ZvSoWnGjNBCjupRMaLvMuGqbLISyBGr1L3Zub/a6WAIfmIc/iSP9Md4yABZgyvyv07GOyvT5Y8kTWs5NAj8yh/1ddsrmwRuvqVmHOA6SdH9wYdKTN1dRj7vty3pekDL6DSq/j/n+DKZmdeD4MIVHIZduQaCe/+jTZeGeLEaXWd+6/zMXDch1yxXfGSv1htneeKmAW9G4BKFp3U4J2OQMdigZccdZM3JqkvlZLBi03nUuwlZ61Lk90Go+wiN1GZMINzT4NVxo3slvoqlO4rJxjOS1NlRz0nyTKqUeq1YzhQTj4PXm40m0j6b0286i5Lk3VZPCo4ZW7AiF8BYn20VAIFe3ZTYoZsX4A6tjQ3N3CQlcbfye8MGuDdKxrlkpZcdIOsaSMcWIQLP99gdKWQRIrlfRLOYIwCh+PiT5FtLk7i8NFCrglCFE0ANvVMr+L1SSa4xJo/lHHd6fAv/r/YjcYJyuP8Lcm0n2B5K4qLkRFl4LYvpo4/kXbluSu7xdRnUJXm0mAbU9IgTd8POv/Rn3ickCLi5fxvlT0CFWCXlMwX/LQ6MzNqlQBp9dT+qV0R1zxZ/S0AThuY00N6WNGonoHNr+ofCZZ5ahfLEGhT/H0Ci9sjSph881vcWcYHsVnZH94E=
   bucket: danielwiltshire.co.uk
   region: eu-west-2
   acl: public_read
