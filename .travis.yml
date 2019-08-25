@@ -1,23 +1,17 @@
-sudo: required
 language: node_js
 node_js:
-- stable
-python:
-- "3.5"
+  - "stable"
 cache:
   directories:
-  - node_modules
-- pip
-install:
-- pip install --user awscli
+    - node_modules
 script:
-- npm test
-- npm run build
+  - npm test
+  - npm run build
 deploy:
   provider: s3
-  access_key_id: AKIAWGUPMT3J46BJE6PM
+  access_key_id:  AKIAWGUPMT3J46BJE6PM
   secret_access_key:
-    secure: BEPJCn/10Uh4X1Gnfsa1R+IegiQ5C+ETtLUzzzGI1ZvSoWnGjNBCjupRMaLvMuGqbLISyBGr1L3Zub/a6WAIfmIc/iSP9Md4yABZgyvyv07GOyvT5Y8kTWs5NAj8yh/1ddsrmwRuvqVmHOA6SdH9wYdKTN1dRj7vty3pekDL6DSq/j/n+DKZmdeD4MIVHIZduQaCe/+jTZeGeLEaXWd+6/zMXDch1yxXfGSv1htneeKmAW9G4BKFp3U4J2OQMdigZccdZM3JqkvlZLBi03nUuwlZ61Lk90Go+wiN1GZMINzT4NVxo3slvoqlO4rJxjOS1NlRz0nyTKqUeq1YzhQTj4PXm40m0j6b0286i5Lk3VZPCo4ZW7AiF8BYn20VAIFe3ZTYoZsX4A6tjQ3N3CQlcbfye8MGuDdKxrlkpZcdIOsaSMcWIQLP99gdKWQRIrlfRLOYIwCh+PiT5FtLk7i8NFCrglCFE0ANvVMr+L1SSa4xJo/lHHd6fAv/r/YjcYJyuP8Lcm0n2B5K4qLkRFl4LYvpo4/kXbluSu7xdRnUJXm0mAbU9IgTd8POv/Rn3ickCLi5fxvlT0CFWCXlMwX/LQ6MzNqlQBp9dT+qV0R1zxZ/S0AThuY00N6WNGonoHNr+ofCZZ5ahfLEGhT/H0Ci9sjSph881vcWcYHsVnZH94E=
+    secure: 1DA2FiZYlt4SiPW7ZN98Ywywo8jIjNtyzMFrFX+i
   bucket: danielwiltshire.co.uk
   region: eu-west-2
   acl: public_read
@@ -25,6 +19,3 @@ deploy:
   local_dir: dist
   on:
     repo: danwiltshire/portfolio-frontend
-after_deploy:
-  - aws configure set preview.cloudfront true
-  - aws cloudfront create-invalidation --distribution-id E30VJO5CGRJ0ZZ --paths "/*"
