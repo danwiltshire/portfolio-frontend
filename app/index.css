@@ -8,11 +8,17 @@ body {
   color: #bbbec5;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 14px;
 }
 
 a:link { color: #93b7cd }
@@ -22,5 +28,72 @@ a:active { color: #89adc2 }
 
 article.gallery_image {
   display: inline-block;
-  margin: 0 4px 0 0;
+  margin: 20px;
+  box-shadow: 0 0 15px #000000;
+}
+
+article.gallery_image img {
+  display: block;
+}
+
+div.title-with-subtitle h1 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+div.title-with-subtitle h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #bbbec5;
+}
+
+div.button {
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+div.button a {
+  display: block;
+  text-decoration: none;
+}
+
+div.button a:link {
+  padding: 6px 23px;
+  border: 1px solid #93b7cd;
+}
+
+div.button a:hover {
+  cursor: pointer;
+  border: 1px solid #a0c5da;
+  background-color: #42454b;
+}
+
+header {
+  margin: 80px 0;
+}
+
+header table {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header table tr td {
+  padding: 0 30px;
+}
+
+header table tr td:first-child {
+  border-right: 1px solid #4d4f56;
+}
+
+section h2 {
+  background-color: white;
+  color: #2a2c31;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 23px 0;
+  margin: 40px auto;
+  display: block;
 }

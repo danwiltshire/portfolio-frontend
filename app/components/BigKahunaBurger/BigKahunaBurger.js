@@ -6,16 +6,41 @@ const BigKahunaBurger = () => (
   <div>
 
     <header>
-      <h1>Daniel Wiltshire</h1>
-      <span>Hey, nice to meet you!</span>
 
-      <p>I’m an IT Infrastructure Security Administrator for apetito UK where I implement strong and usable IT security solutions. In my spare time, I play a variety of instruments, shoot photographs, design websites and build my skill-set in my home lab.</p>
+      <table>
+        <tr>
+          <td>
 
-      <a
-        href="https://www.linkedin.com/in/danielwiltshire/"
-        title="See my profile on LinkedIn">
-        LinkedIn Profile
-      </a>
+
+          <div className="title-with-subtitle">
+        <h1>Daniel Wiltshire</h1>
+        <h3>Specialist in IT Security</h3>
+      </div>
+
+      <div className="button">
+        <a
+          href="https://www.linkedin.com/in/danielwiltshire/"
+          title="See my profile on LinkedIn">
+          LinkedIn
+        </a>
+      </div>
+
+          </td>
+          <td>
+
+
+            
+      <p>I’m a Service Delivery Engineer for NCR where I automate the delivery of mission-critical SaaS applications worldwide.</p>
+
+<p>In my spare time I play a variety of instruments, shoot photos, design web apps and build my skillset in a home lab.</p>
+
+
+          </td>
+        </tr>
+      </table>
+
+
+
     </header>
 
     <section>
@@ -28,18 +53,15 @@ const BigKahunaBurger = () => (
 
       <Designs />
 
-      <h2>This isn&apos;t just static HTML&hellip;</h2>
-
-      <p>Here are a few things that make my portfolio beautifully complex:</p>
+      <h2>Powered by</h2>
 
       <ul>
-        <li>Written in JavaScript using React</li>
-        <li>Uses Build tools such as NodeJS, Babel and Webpack</li>
-        <li>Static HTML and media deployed to S3</li>
-        <li>Media accessed via REST API (AWS API Gateway and stateless Lambda functions)</li>
-        <li>Fully serverless</li>
-        <li>Deployment is automated using Travis CI</li>
-        <li>The code is open source. Checkout my <a href="https://github.com/danwiltshire/">GitHub profile</a>!</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Travis CI</li>
+        <li>NodeJS, Babel and Webpack</li>
+        <li>AWS S3, API Gateway and Lambda</li>
+        <li>The code is open source - checkout my <a href="https://github.com/danwiltshire/">GitHub profile</a>!</li>
       </ul>
 
     </section>
