@@ -40,6 +40,20 @@ const BigKahunaBurger = () => (
         </a>
       </article>
 
+      <h2>This isn&apos;t just static HTML&hellip;</h2>
+
+      <p>Here are a few things that make my portfolio beautifully complex:</p>
+
+      <ul>
+        <li>Written in JavaScript using React</li>
+        <li>Uses Build tools such as NodeJS, Babel and Webpack</li>
+        <li>Static HTML and media deployed to S3</li>
+        <li>Media accessed via REST API (AWS API Gateway and stateless Lambda functions)</li>
+        <li>Fully serverless</li>
+        <li>Deployment is automated using Travis CI</li>
+        <li>The code is open source. Checkout my <a href="https://github.com/danwiltshire/">GitHub profile</a>!</li>
+      </ul>
+
     </section>
 
   </div>
