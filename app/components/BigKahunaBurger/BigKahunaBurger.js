@@ -1,4 +1,7 @@
 import React from 'react'
+
+import { Button } from 'semantic-ui-react'
+
 import Designs from '../Designs'
 import Photographs from '../Photographs'
 

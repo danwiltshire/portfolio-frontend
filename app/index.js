@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import 'promise-polyfill/src/polyfill' // IE compatibility
+import './index.css'
+import 'semantic-ui-css/semantic.min.css'
 import BigKahunaBurger from './components/BigKahunaBurger'
 
 // JavaScript standard functional
