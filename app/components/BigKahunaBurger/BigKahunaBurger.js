@@ -1,69 +1,68 @@
 import React from 'react'
 
-import { Button } from 'semantic-ui-react'
+import { Header, Segment, Container, Image, Button, Icon, List } from 'semantic-ui-react'
 
 import Designs from '../Designs'
 import Photographs from '../Photographs'
 
 const BigKahunaBurger = () => (
-  <div>
+  <Container text>
 
-    <header>
+    <Segment basic>
+      <Header as='h1'>
+        Daniel Wiltshire
+        <Header.Subheader>
+          Specialist in IT Security
+        </Header.Subheader>
+      </Header>
+      <p>I’m a Service Delivery Engineer for NCR where I automate the delivery of mission-critical SaaS applications worldwide.</p>
+      <Button color='linkedin'>
+        <Icon name='linkedin' /> LinkedIn
+      </Button>
+    </Segment>
 
-      <table>
-        <tr>
-          <td>
+    <Segment basic>
+      <Header as='h2'>My Interests</Header>
+      <List bulleted>
+        <List.Item>Landscape photography</List.Item>
+        <List.Item>UI design</List.Item>
+        <List.Item>Piano, guitar and bass</List.Item>
+        <List.Item>Cyber security</List.Item>
+        <List.Item>Programming.</List.Item>
+      </List>
+    </Segment>
 
-            <div className="title-with-subtitle">
-              <h1>Daniel Wiltshire</h1>
-              <h3>Specialist in IT Security</h3>
-            </div>
+    <Segment basic>
+      <Header as='h2'>Photography</Header>
+      <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk_small.jpg' fluid rounded />
+      <p>Sankt Jorgens So, Copenhagen</p>
+      <Button>
+        Load more (6)
+      </Button>
+    </Segment>
 
-            <div className="button">
-              <a
-                href="https://www.linkedin.com/in/danielwiltshire/"
-                title="See my profile on LinkedIn">
-                LinkedIn
-              </a>
-            </div>
+    <Segment basic>
+      <Header as='h2'>UI design</Header>
+      <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/design/aviation_festival_small.jpg' fluid rounded />
+      <p>Sankt Jorgens So, Copenhagen</p>
+      <Button>
+        Load more (6)
+      </Button>
+    </Segment>
 
-          </td>
-          <td>
+    <Segment basic>
+      <Header as='h2'>Contact</Header>
+      <p>Please visit me over at LinkedIn.</p>
+      <Button color='linkedin'>
+        <Icon name='linkedin' /> LinkedIn
+      </Button>
+    </Segment>
 
-            <p>I’m a Service Delivery Engineer for NCR where I automate the delivery of mission-critical SaaS applications worldwide.</p>
+    <Segment basic>
+      <p>This serverless app is written in JavaScript and is continuously deployed to AWS using Travis CI.</p>
+    </Segment>
 
-            <p>In my spare time I play a variety of instruments, shoot photos, design web apps and build my skillset in a home lab.</p>
-
-          </td>
-        </tr>
-      </table>
-
-    </header>
-
-    <section>
-
-      <h2>Photography</h2>
-
-      <Photographs />
-
-      <h2>Design</h2>
-
-      <Designs />
-
-      <h2>Powered by</h2>
-
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Travis CI</li>
-        <li>NodeJS, Babel and Webpack</li>
-        <li>AWS S3, API Gateway and Lambda</li>
-        <li>The code is open source - checkout my <a href="https://github.com/danwiltshire/">GitHub profile</a>!</li>
-      </ul>
-
-    </section>
-
-  </div>
+  </Container>
 )
 
 export default BigKahunaBurger
