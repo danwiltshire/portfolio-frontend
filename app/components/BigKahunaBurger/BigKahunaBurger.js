@@ -49,7 +49,7 @@ const BigKahunaBurger = () => (
 
     <Segment basic>
       <Header as='h2'>Contact</Header>
-      <p>Please visit me over at LinkedIn.</p>
+      <p>See me over at LinkedIn.</p>
       <a href="https://www.linkedin.com/in/danielwiltshire/">
         <Button color='linkedin'>
           <Icon name='linkedin' /> LinkedIn
