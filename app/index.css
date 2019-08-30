@@ -1,0 +1,13 @@
+div#main {
+  margin: 30px 0;
+}
+
+div#footer p {
+  color: #888888;
+}
+
+div.gallery-image span {
+  display: block;
+  margin: 10px 0 20px 0;
+  color: #888888;
+}
