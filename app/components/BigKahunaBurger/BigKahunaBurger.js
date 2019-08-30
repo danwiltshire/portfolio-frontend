@@ -22,7 +22,7 @@ const BigKahunaBurger = () => (
     </Segment>
 
     <Segment basic>
-      <Header as='h2'>My Interests</Header>
+      <Header as='h2'>My interests</Header>
       <List bulleted>
         <List.Item>Landscape photography</List.Item>
         <List.Item>UI design</List.Item>
