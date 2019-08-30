@@ -1,9 +1,6 @@
 import React from 'react'
 
-import { Header, Segment, Label, Container, Image, Button, Icon, List } from 'semantic-ui-react'
-
-import Designs from '../Designs'
-import Photographs from '../Photographs'
+import { Header, Segment, Container, Image, Button, Icon, List } from 'semantic-ui-react'
 
 const BigKahunaBurger = () => (
   <Container id="main" text>
