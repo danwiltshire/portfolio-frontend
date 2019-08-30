@@ -1,7 +1,6 @@
 # portfolio-frontend
 
 [![Build Status](https://travis-ci.com/danwiltshire/portfolio-frontend.svg?branch=master)](https://travis-ci.com/danwiltshire/portfolio-frontend)
-
 [![Known Vulnerabilities](https://dev.snyk.io/test/github/danwiltshire/portfolio-frontend/badge.svg)](https://dev.snyk.io/test/github/danwiltshire/portfolio-frontend)
 
 Frontend for my portfolio website
