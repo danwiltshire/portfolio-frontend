@@ -34,7 +34,7 @@ const BigKahunaBurger = () => (
     <Segment basic>
       <Header as='h2'>Photography</Header>
       <div className="gallery-image">
-        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk_small.jpg' fluid rounded />
+        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' fluid rounded />
         <span>Sankt Jørgens Sø, Copenhagen</span>
       </div>
     </Segment>
@@ -42,8 +42,8 @@ const BigKahunaBurger = () => (
     <Segment basic>
       <Header as='h2'>UI design</Header>
       <div className="gallery-image">
-        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/design/aviation_festival_small.jpg' fluid rounded />
-        <span>Bristol Aviation Fair poster</span>
+        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/design/docu_io.jpg' fluid rounded />
+        <span>A simple IT documentation web app</span>
       </div>
     </Segment>
 
