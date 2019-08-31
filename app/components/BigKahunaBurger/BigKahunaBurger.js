@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Segment, Popup, Container, Image, Button, Icon, List } from 'semantic-ui-react'
+import { Header, Segment, Popup, Grid, Container, Image, Button, Icon, List } from 'semantic-ui-react'
 
 const BigKahunaBurger = () => (
   <Container id="main" text>
@@ -32,15 +32,21 @@ const BigKahunaBurger = () => (
     </Segment>
 
     <Segment basic>
-      <div>
-        <Header as='h2' floated='left'>Photography</Header>
-        <Popup
-          trigger={<Button floated='right'>See all</Button>}
-          content="Not available right now."
-          on='click'
-          basic
-        />
-      </div>
+      <Grid columns={2} padded='vertically'>
+        <Grid.Row>
+          <Grid.Column>
+            <Header as='h2'>Photography</Header>
+          </Grid.Column>
+          <Grid.Column textAlign='right'>
+            <Popup
+              trigger={<p><a href="#">See all</a></p>}
+              content="Not available right now."
+              on='click'
+              position="top right"
+            />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
       <div className="gallery-image">
         <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' fluid rounded />
         <span>Sankt Jørgens Sø, Copenhagen</span>
@@ -48,15 +54,21 @@ const BigKahunaBurger = () => (
     </Segment>
 
     <Segment basic>
-      <div>
-        <Header as='h2' floated='left'>UI design</Header>
-        <Popup
-          trigger={<Button floated='right'>See all</Button>}
-          content="Not available right now."
-          on='click'
-          basic
-        />
-      </div>
+      <Grid columns={2} padded='vertically'>
+        <Grid.Row>
+          <Grid.Column>
+            <Header as='h2'>UI design</Header>
+          </Grid.Column>
+          <Grid.Column textAlign='right'>
+            <Popup
+              trigger={<p><a href="#">See all</a></p>}
+              content="Not available right now."
+              on='click'
+              position="top right"
+            />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
       <div className="gallery-image">
         <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/design/docu_io.jpg' fluid rounded />
         <span>A simple IT documentation web app</span>
