@@ -87,7 +87,6 @@ const BigKahunaBurger = () => (
 
     <Segment id="footer" basic>
       <p>This serverless app is written in JavaScript and is continuously deployed to AWS using Travis CI.</p>
-
       <p><a href="https://github.com/danwiltshire/portfolio-frontend">Source code on GitHub</a></p>
     </Segment>
 
