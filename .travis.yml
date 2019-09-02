@@ -14,7 +14,6 @@ deploy:
     secure: C+abRi7WDgwofbQ9JtpLImVYX29D1YqpF39SiwXX/aFGWyv088ZnXUaljrccJWGIblPBW6+vOO30Eat+jm+Me2ZCDMHlIhBahXZvFYXkbFKR8GSY8Cz3WUuK2JGFg/183SYs1TuNr53IUbVQMGoGw1k6ErI1zb3nIKKbB7ldA/oTu8Pp6ldRzo5DY7DpYyswp/Qbydk7hOml0HgH0MKRsz5g4kxTB6893qxoNganUrfGZ7HxYm2r2igrip9sYxpsiHt7Fex6TeSmoGxfVfQrM1DV4eivOVUOkpWD5333DHWtYegSBnqu5d4q9yX+MxKmfAydM34brOHr1Y2EsSKYAPV9xmEMXGqg8zKB433vHMJRgsJIn4B23v93lv25ZA58MlQwILOVh+MMWJhi0z8alCi2QJy0WUuzLP62+kb/k9YipCnNtAVQ6tXvby/aVD/ikVwv4riKdvTjqngxReHWOtgTzH/zhXFN693kK1x7/q6L+68zVjYa3Qt3wLO/Sb611Gz00XIPSnOpmNn5GfrSpmFDyOh0JmgvwyhNvXUjSb65Un865zzXc1EBsqjqMEoTjJP4Jc2l6r8Lp9boFmxB+N/4cfUmlaKlImQnj3KlAG3bTj0vYkZ/x9ZcAiXbMrO/nVWQ2NSNmpd/uy03CzkGWBxt/NUNRvTTFhtY/i8/Wj0=
   bucket: danielwiltshire.co.uk
   region: eu-west-2
-  acl: public_read
   skip_cleanup: true
   local_dir: dist
   on:
