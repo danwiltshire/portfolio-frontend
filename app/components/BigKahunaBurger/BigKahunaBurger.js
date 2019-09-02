@@ -48,7 +48,7 @@ const BigKahunaBurger = () => (
         </Grid.Row>
       </Grid>
       <div className="gallery-image">
-        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' fluid rounded />
+        <Image src='https://media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' fluid rounded />
         <span>Sankt Jørgens Sø, Copenhagen</span>
       </div>
     </Segment>
@@ -70,7 +70,7 @@ const BigKahunaBurger = () => (
         </Grid.Row>
       </Grid>
       <div className="gallery-image">
-        <Image src='https://s3.eu-west-2.amazonaws.com/media.danielwiltshire.co.uk/images/design/docu_io.jpg' fluid rounded />
+        <Image src='https://media.danielwiltshire.co.uk/images/design/docu_io.jpg' fluid rounded />
         <span>A simple IT documentation web app</span>
       </div>
     </Segment>
