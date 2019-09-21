@@ -11,3 +11,17 @@ div.gallery-image span {
   margin: 10px 0 0 0;
   color: #888888;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: rgb(51, 51, 51)!important;
+      color: #CCC!important;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: #CCC!important;
+  }
+  div.sub {
+    color: #999999!important;
+  }
+}
