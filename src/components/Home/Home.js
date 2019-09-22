@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Segment, Popup, Grid, Container, Image, Button, Icon, List } from 'semantic-ui-react'
+import { Header, Segment, Grid, Container, Image, Button, Icon, List } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 const Home = () => (
@@ -60,12 +60,11 @@ const Home = () => (
             <Header as='h2'>UI design</Header>
           </Grid.Column>
           <Grid.Column textAlign='right'>
-            <Popup
-              trigger={<p><a href="#">See all</a></p>}
-              content="Not available right now."
-              on='click'
-              position="top right"
-            />
+            <Link
+              to='/gallery/uidesigns'
+            >
+              See all            
+            </Link>
           </Grid.Column>
         </Grid.Row>
       </Grid>
