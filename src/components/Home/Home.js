@@ -40,7 +40,7 @@ const Home = () => (
           </Grid.Column>
           <Grid.Column textAlign='right'>
             <Link
-              to='/gallery/photos'
+              to='/gallery/photography'
             >
               See all            
             </Link>
