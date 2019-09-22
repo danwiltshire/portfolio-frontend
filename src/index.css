@@ -15,9 +15,13 @@ div.gallery-image span {
 div.ui.sticky {
   padding: 25px 0 5px 0;
   margin-bottom: 7px;
-  -webkit-backdrop-filter: blur(30px) brightness(110%) saturate(120%);
-  backdrop-filter: blur(30px) brightness(110%) saturate(120%);
-  background-color: rgba(76, 76, 76, 0.3); 
+  -webkit-backdrop-filter: blur(30px) saturate(130%) brightness(120%);
+  backdrop-filter: blur(30px) saturate(130%) brightness(120%);
+  background-color: rgba(189, 189, 189, 0.4); 
+}
+
+div.ui.sticky h2.ui.header {
+  color: #444444;
 }
 
 /* Dark mode */
@@ -25,6 +29,14 @@ div.ui.sticky {
   body {
       background-color: rgb(30, 30, 30)!important;
       color: #CCC!important;
+  }
+
+  div.ui.sticky {
+    background-color: rgba(76, 76, 76, 0.4); 
+  }
+
+  div.ui.sticky a {
+    text-shadow: 0 0 5px #000000;
   }
 
   h1.ui.header,
@@ -35,8 +47,13 @@ div.ui.sticky {
   h6.ui.header {
     color: #CCC;
   }
+
   h1.ui.header div.sub.header {
     color: #999999;
+  }
+
+  div.ui.sticky h2.ui.header {
+    color: #cccccc;
   }
 
   div.gallery-image img {

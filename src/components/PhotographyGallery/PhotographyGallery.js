@@ -21,7 +21,7 @@ export default class PhotographyGallery extends React.Component {
   render () {
     return (
       <div>
-          <Sticky pushing={false}>
+          <Sticky>
             <Container>
             <Grid columns={2} padded='vertically'>
               <Grid.Row>
@@ -43,7 +43,10 @@ export default class PhotographyGallery extends React.Component {
             <Image.Group size='massive'>
               {
                 this.state.photographs.map(photograph =>
-                  <Image src='https://media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' rounded />
+                  <Image src={photograph.LargeImageSrc}
+                    alt={photograph.Meta}
+                    rounded
+                  />
                 )
               }
             </Image.Group>
