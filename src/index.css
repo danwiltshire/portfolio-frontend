@@ -1,5 +1,5 @@
-div#main {
-  margin: 35px 0 45px 0;
+div#main.ui.text.container {
+  padding: 35px 0 35px 0;
 }
 
 div#footer p {
