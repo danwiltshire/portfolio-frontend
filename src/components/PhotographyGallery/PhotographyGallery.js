@@ -1,5 +1,7 @@
 import React from 'react'
 import API from '../../utils/API'
+import { Header, Segment, Grid, Container, Image, Sticky } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default class PhotographyGallery extends React.Component {
   state = {
@@ -19,21 +21,33 @@ export default class PhotographyGallery extends React.Component {
   render () {
     return (
       <div>
-        {
-          this.state.photographs.map(photograph =>
-            <article className="gallery_image" key={photograph.Header}>
-              <a
-                href={photograph.LargeImageSrc}>
-                <img
-                  src={photograph.SmallImageSrc}
-                  alt={photograph.Meta}
-                  width="432px"
-                  height="288px"
-                />
-              </a>
-            </article>
-          )
-        }
+          <Sticky pushing={false}>
+            <Container>
+            <Grid columns={2} padded='vertically'>
+              <Grid.Row>
+                <Grid.Column>
+                  <Header as='h2'>Photography</Header>
+                </Grid.Column>
+                <Grid.Column textAlign='right'>
+                  <Link
+                    to='/'
+                  >
+                    Close
+                  </Link>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+            </Container>
+          </Sticky>
+          <Container textAlign='center'>
+            <Image.Group size='massive'>
+              {
+                this.state.photographs.map(photograph =>
+                  <Image src='https://media.danielwiltshire.co.uk/images/photography/sankt_jorgens_so_dusk.jpg' rounded />
+                )
+              }
+            </Image.Group>
+          </Container>
       </div>
     )
   }

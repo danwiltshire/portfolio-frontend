@@ -12,6 +12,14 @@ div.gallery-image span {
   color: #888888;
 }
 
+div.ui.sticky {
+  padding: 25px 0 5px 0;
+  margin-bottom: 7px;
+  -webkit-backdrop-filter: blur(30px) brightness(110%) saturate(120%);
+  backdrop-filter: blur(30px) brightness(110%) saturate(120%);
+  background-color: rgba(76, 76, 76, 0.3); 
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
