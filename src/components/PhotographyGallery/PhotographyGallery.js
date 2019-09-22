@@ -1,6 +1,6 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Segment, Grid, Container, Image, Sticky } from 'semantic-ui-react'
+import { Header, Grid, Container, Image, Sticky } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class PhotographyGallery extends React.Component {
@@ -21,36 +21,36 @@ export default class PhotographyGallery extends React.Component {
   render () {
     return (
       <div>
-          <Sticky>
-            <Container>
-            <Grid columns={2} padded='vertically'>
-              <Grid.Row>
-                <Grid.Column>
-                  <Header as='h2'>Photography</Header>
-                </Grid.Column>
-                <Grid.Column textAlign='right'>
-                  <Link
-                    to='/'
-                  >
-                    Close
-                  </Link>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-            </Container>
-          </Sticky>
-          <Container textAlign='center'>
-            <Image.Group size='massive'>
-              {
-                this.state.photographs.map(photograph =>
-                  <Image src={photograph.LargeImageSrc}
-                    alt={photograph.Meta}
-                    rounded
-                  />
-                )
-              }
-            </Image.Group>
+        <Sticky>
+          <Container>
+          <Grid columns={2} padded='vertically'>
+            <Grid.Row>
+              <Grid.Column>
+                <Header as='h2'>Photography</Header>
+              </Grid.Column>
+              <Grid.Column textAlign='right'>
+                <Link
+                  to='/'
+                >
+                  Close
+                </Link>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           </Container>
+        </Sticky>
+        <Container textAlign='center'>
+          <Image.Group size='large'>
+            {
+              this.state.photographs.map(photograph =>
+                <Image src={photograph.SmallImageSrc}
+                  alt={photograph.Meta}
+                  rounded
+                />
+              )
+            }
+          </Image.Group>
+        </Container>
       </div>
     )
   }
