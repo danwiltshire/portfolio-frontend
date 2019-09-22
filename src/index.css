@@ -18,7 +18,7 @@ div.gallery-image span {
       background-color: rgb(30, 30, 30)!important;
       color: #CCC!important;
   }
-  
+
   h1.ui.header,
   h2.ui.header,
   h3.ui.header,
@@ -29,5 +29,9 @@ div.gallery-image span {
   }
   h1.ui.header div.sub.header {
     color: #999999;
+  }
+
+  div.gallery-image img {
+    box-shadow: 0px 0px 5px #111111;
   }
 }
