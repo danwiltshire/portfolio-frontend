@@ -1,11 +1,12 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Grid, Container, Image, Sticky, Icon } from 'semantic-ui-react'
+import { Header, Grid, Container, Image, Sticky, Icon, Dimmer, Loader } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class UIDesignsGallery extends React.Component {
   state = {
-    designs: []
+    designs: [],
+    loading: true
   }
 
   componentDidMount() {
@@ -36,16 +37,25 @@ export default class UIDesignsGallery extends React.Component {
           </Container>
         </Sticky>
         <Container textAlign='center'>
-          <Image.Group size='large'>
-            {
-              this.state.designs.map(design =>
-                <Image src={design.SmallImageSrc}
-                  alt={design.Meta}
-                  rounded
-                />
-              )
-            }
-          </Image.Group>
+          { this.state.loading
+            ?
+            <Dimmer active>
+              <Loader 
+                size='massive'
+              />
+            </Dimmer>
+            :
+            <Image.Group size='large'>
+              {
+                this.state.photographs.map(photograph =>
+                  <Image src={photograph.SmallImageSrc}
+                    alt={photograph.Meta}
+                    rounded
+                  />
+                )
+              }
+            </Image.Group>
+          }
         </Container>
       </div>
     )

@@ -38,7 +38,7 @@ export default class PhotographyGallery extends React.Component {
           </Container>
         </Sticky>
         <Container textAlign='center'>
-          {this.state.loading
+          { this.state.loading
             ?
             <Dimmer active>
               <Loader 
