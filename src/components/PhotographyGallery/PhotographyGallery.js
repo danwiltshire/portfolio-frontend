@@ -1,6 +1,6 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
+import { Header, Icon, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class PhotographyGallery extends React.Component {
