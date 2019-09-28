@@ -8,42 +8,40 @@ export default class UIDesignsGallery extends React.Component {
     designs: []
   }
 
-  async componentDidMount () {
-    try {
-      const res = await API.get('/designs')
-      const designs = res.data.data
-      this.setState({ designs })
-    } catch (e) {
-      console.log(`Axios request failed: ${e}`)
-    }
+  componentDidMount() {
+    API.fetchData('designs')
+      .then(response => response.json())
+      .then(response => response.data)
+      .then(designs => this.setState({ designs }))
+      .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
-
-  render () {
+  
+  render() {
     return (
       <div>
         <Sticky>
           <Container>
-          <Grid columns={2} padded='vertically'>
-            <Grid.Row>
-              <Grid.Column>
-                <Header as='h2'>UI design</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='right'>
-                <Link
-                  to='/'
-                >
-                  Close
+            <Grid columns={2} padded='vertically'>
+              <Grid.Row>
+                <Grid.Column>
+                  <Header as='h2'>UI design</Header>
+                </Grid.Column>
+                <Grid.Column textAlign='right'>
+                  <Link
+                    to='/'
+                  >
+                    Close
                 </Link>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Container>
         </Sticky>
         <Container textAlign='center'>
           <Image.Group size='large'>
             {
               this.state.designs.map(design =>
-                <Image src={design.LargeImageSrc}
+                <Image src={design.SmallImageSrc}
                   alt={design.Meta}
                   rounded
                 />
