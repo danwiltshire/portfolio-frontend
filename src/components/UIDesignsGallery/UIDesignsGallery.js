@@ -1,6 +1,6 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Grid, Container, Image, Sticky } from 'semantic-ui-react'
+import { Header, Grid, Container, Image, Sticky, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class UIDesignsGallery extends React.Component {
@@ -27,11 +27,9 @@ export default class UIDesignsGallery extends React.Component {
                   <Header as='h2'>UI design</Header>
                 </Grid.Column>
                 <Grid.Column textAlign='right'>
-                  <Link
-                    to='/'
-                  >
-                    Close
-                </Link>
+                  <Link to='/'>
+                    <Icon name="close" size="large"></Icon>
+                  </Link>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
