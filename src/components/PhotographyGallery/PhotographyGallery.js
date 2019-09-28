@@ -1,11 +1,12 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Grid, Container, Image, Sticky, Icon } from 'semantic-ui-react'
+import { Header, Icon, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class PhotographyGallery extends React.Component {
   state = {
-    photographs: []
+    photographs: [],
+    loading: true
   }
 
   componentDidMount() {
@@ -16,7 +17,8 @@ export default class PhotographyGallery extends React.Component {
       .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
 
-  render () {
+
+  render() {
     return (
       <div>
         <Sticky>
@@ -30,22 +32,32 @@ export default class PhotographyGallery extends React.Component {
                 <Link to='/'>
                   <Icon name="close" size="large"></Icon>
                 </Link>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Container>
         </Sticky>
         <Container textAlign='center'>
-          <Image.Group size='large'>
-            {
-              this.state.photographs.map(photograph =>
-                <Image src={photograph.SmallImageSrc}
-                  alt={photograph.Meta}
-                  rounded
-                />
-              )
-            }
-          </Image.Group>
+          {this.state.loading
+            ?
+            <Dimmer active>
+              <Loader 
+                size='massive'
+              />
+            </Dimmer>
+            :
+            <Image.Group size='large'>
+              {
+                this.state.photographs.map(photograph =>
+                  <Image src={photograph.SmallImageSrc}
+                    alt={photograph.Meta}
+                    rounded
+                  />
+                )
+              }
+            </Image.Group>
+          }
+
         </Container>
       </div>
     )
