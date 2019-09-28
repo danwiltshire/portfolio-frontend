@@ -8,14 +8,12 @@ export default class PhotographyGallery extends React.Component {
     photographs: []
   }
 
-  async componentDidMount () {
-    try {
-      const res = await API.get('/photographs')
-      const photographs = res.data.data
-      this.setState({ photographs })
-    } catch (e) {
-      console.log(`Axios request failed: ${e}`)
-    }
+  componentDidMount() {
+    API.fetchData('photographs')
+      .then(response => response.json())
+      .then(response => response.data)
+      .then(photographs => this.setState({ photographs }))
+      .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
 
   render () {
