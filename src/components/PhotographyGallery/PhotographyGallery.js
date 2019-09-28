@@ -13,7 +13,11 @@ export default class PhotographyGallery extends React.Component {
     API.fetchData('photographs')
       .then(response => response.json())
       .then(response => response.data)
-      .then(photographs => this.setState({ photographs }))
+      .then(photographs => this.setState(
+        {
+          photographs,
+          loading: false
+        }))
       .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
 
@@ -23,15 +27,15 @@ export default class PhotographyGallery extends React.Component {
       <div>
         <Sticky>
           <Container>
-          <Grid columns={2} padded='vertically'>
-            <Grid.Row>
-              <Grid.Column>
-                <Header as='h2'>Photography</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='right'>
-                <Link to='/'>
-                  <Icon name="close" size="large"></Icon>
-                </Link>
+            <Grid columns={2} padded='vertically'>
+              <Grid.Row>
+                <Grid.Column>
+                  <Header as='h2'>Photography</Header>
+                </Grid.Column>
+                <Grid.Column textAlign='right'>
+                  <Link to='/'>
+                    <Icon name="close" size="large"></Icon>
+                  </Link>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -41,7 +45,7 @@ export default class PhotographyGallery extends React.Component {
           {this.state.loading
             ?
             <Dimmer active>
-              <Loader 
+              <Loader
                 size='massive'
               />
             </Dimmer>
