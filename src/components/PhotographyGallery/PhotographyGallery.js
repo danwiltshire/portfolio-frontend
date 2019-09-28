@@ -53,7 +53,9 @@ export default class PhotographyGallery extends React.Component {
             <Image.Group size='large'>
               {
                 this.state.photographs.map(photograph =>
-                  <Image src={photograph.SmallImageSrc}
+                  <Image
+                    src={photograph.SmallImageSrc}
+                    key={photograph.SmallImageSrc}
                     alt={photograph.Meta}
                     rounded
                   />

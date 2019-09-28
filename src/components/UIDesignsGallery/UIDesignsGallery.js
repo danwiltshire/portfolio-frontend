@@ -13,7 +13,11 @@ export default class UIDesignsGallery extends React.Component {
     API.fetchData('designs')
       .then(response => response.json())
       .then(response => response.data)
-      .then(designs => this.setState({ designs }))
+      .then(designs => this.setState(
+        {
+          designs,
+          loading: false
+        }))
       .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
   
@@ -47,9 +51,11 @@ export default class UIDesignsGallery extends React.Component {
             :
             <Image.Group size='large'>
               {
-                this.state.photographs.map(photograph =>
-                  <Image src={photograph.SmallImageSrc}
-                    alt={photograph.Meta}
+                this.state.designs.map(design =>
+                  <Image
+                    src={design.SmallImageSrc}
+                    key={design.SmallImageSrc}
+                    alt={design.Meta}
                     rounded
                   />
                 )
