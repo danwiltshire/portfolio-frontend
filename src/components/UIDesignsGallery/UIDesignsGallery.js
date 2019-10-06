@@ -61,6 +61,7 @@ export default class UIDesignsGallery extends React.Component {
                     src={design.SmallImageSrc}
                     key={design.SmallImageSrc}
                     alt={design.Meta}
+                    href={design.LargeImageSrc}
                     rounded
                     fluid
                   />

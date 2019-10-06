@@ -21,7 +21,6 @@ export default class PhotographyGallery extends React.Component {
       .catch(err => console.log(`Could not fetch the data: ${err}`))
   }
 
-
   render() {
     return (
       <div>
@@ -56,19 +55,19 @@ export default class PhotographyGallery extends React.Component {
               {
                 this.state.photographs.map(photograph =>
                   <Grid.Column mobile={16} computer={8}>
-                  <Image
-                    src={photograph.SmallImageSrc}
-                    key={photograph.SmallImageSrc}
-                    alt={photograph.Meta}
-                    rounded
-                    fluid
-                  />
+                    <Image
+                      src={photograph.SmallImageSrc}
+                      key={photograph.SmallImageSrc}
+                      alt={photograph.Meta}
+                      href={photograph.LargeImageSrc}
+                      rounded
+                      fluid
+                    />
                   </Grid.Column>
                 )
               }
             </Grid>
           }
-
         </Container>
       </div>
     )
