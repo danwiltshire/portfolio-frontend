@@ -53,18 +53,22 @@ export default class UIDesignsGallery extends React.Component {
               />
             </Dimmer>
             :
-            <Image.Group size='large'>
+            <Grid>
               {
                 this.state.designs.map(design =>
+                  <Grid.Column mobile={16} computer={8}>
                   <Image
                     src={design.SmallImageSrc}
                     key={design.SmallImageSrc}
                     alt={design.Meta}
+                    href={design.LargeImageSrc}
                     rounded
+                    fluid
                   />
+                  </Grid.Column>
                 )
               }
-            </Image.Group>
+            </Grid>
           }
         </Container>
       </div>
