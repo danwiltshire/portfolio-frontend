@@ -52,18 +52,21 @@ export default class PhotographyGallery extends React.Component {
               />
             </Dimmer>
             :
-            <Image.Group size='large'>
+            <Grid>
               {
                 this.state.photographs.map(photograph =>
+                  <Grid.Column mobile={16} computer={8}>
                   <Image
                     src={photograph.SmallImageSrc}
                     key={photograph.SmallImageSrc}
                     alt={photograph.Meta}
                     rounded
+                    fluid
                   />
+                  </Grid.Column>
                 )
               }
-            </Image.Group>
+            </Grid>
           }
 
         </Container>
