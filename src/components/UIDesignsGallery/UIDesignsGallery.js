@@ -44,7 +44,7 @@ export default class UIDesignsGallery extends React.Component {
             </Grid>
           </Container>
         </Sticky>
-        <Container textAlign='center'>
+        <Container>
           { this.state.loading
             ?
             <Dimmer active>
