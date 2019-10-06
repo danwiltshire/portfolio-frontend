@@ -59,4 +59,9 @@ div.ui.sticky h2.ui.header {
   div.gallery-image img {
     box-shadow: 0px 0px 5px #111111;
   }
+
+  a:link, a:visited { color: #BCDDF6 }
+  a:hover { color: rgb(169, 199, 223)!important }
+  a:active { color: rgb(152, 180, 201)!important }
+
 }

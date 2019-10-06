@@ -1,6 +1,6 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Grid, Container, Image, Sticky, Icon, Dimmer, Loader } from 'semantic-ui-react'
+import { Header, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class UIDesignsGallery extends React.Component {
@@ -8,6 +8,8 @@ export default class UIDesignsGallery extends React.Component {
     designs: [],
     loading: true
   }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   componentDidMount() {
     API.fetchData('designs')
@@ -32,8 +34,10 @@ export default class UIDesignsGallery extends React.Component {
                   <Header as='h2'>UI design</Header>
                 </Grid.Column>
                 <Grid.Column textAlign='right'>
-                  <Link to='/'>
-                    <Icon name="close" size="large"></Icon>
+                  <Link
+                    to='/'
+                  >
+                    Close
                   </Link>
                 </Grid.Column>
               </Grid.Row>

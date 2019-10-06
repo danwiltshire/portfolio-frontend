@@ -1,6 +1,6 @@
 import React from 'react'
 import API from '../../utils/API'
-import { Header, Icon, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
+import { Header, Grid, Container, Image, Sticky, Dimmer, Loader } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class PhotographyGallery extends React.Component {
@@ -33,8 +33,10 @@ export default class PhotographyGallery extends React.Component {
                   <Header as='h2'>Photography</Header>
                 </Grid.Column>
                 <Grid.Column textAlign='right'>
-                  <Link to='/'>
-                    <Icon name="close" size="large"></Icon>
+                  <Link
+                      to='/'
+                    >
+                      Close
                   </Link>
                 </Grid.Column>
               </Grid.Row>
