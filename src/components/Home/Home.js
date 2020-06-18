@@ -13,7 +13,7 @@ const Home = () => (
           Specialist in IT Security
         </Header.Subheader>
       </Header>
-      <p>I’m a Service Delivery Engineer for NCR where I deliver mission-critical SaaS applications using modern toolsets such as Chef, Jenkins, Rundeck and Artifactory.</p>
+      <p>I’m a DevOps Engineer for NCR Corporation where I deliver mission-critical SaaS applications using modern toolsets such as Chef, Jenkins, Rundeck and Artifactory.</p>
       <a href="https://www.linkedin.com/in/danielwiltshire/">
         <Button color='linkedin'>
           <Icon name='linkedin' /> LinkedIn
