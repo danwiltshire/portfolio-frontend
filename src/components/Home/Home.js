@@ -75,6 +75,27 @@ const Home = () => (
     </Segment>
 
     <Segment basic>
+      <Grid columns={2} padded='vertically'>
+        <Grid.Row>
+          <Grid.Column>
+            <Header as='h2'>Projects</Header>
+          </Grid.Column>
+          <Grid.Column textAlign='right'>
+            <Link
+              to='/gallery/projects'
+            >
+              See all            
+            </Link>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+      <div className="gallery-image">
+        <Image src='https://media.danielwiltshire.co.uk/images/design/violet-mobileapp-stacked.png' fluid rounded />
+        <span>A serverless media hosting solution</span>
+      </div>
+    </Segment>
+
+    <Segment basic>
       <Header as='h2'>Contact</Header>
       <p>See me over at LinkedIn.</p>
       <a href="https://www.linkedin.com/in/danielwiltshire/">
